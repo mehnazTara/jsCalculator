@@ -1,31 +1,31 @@
 
 .calContainer {
     margin: auto;
-    max-width: 600px;
+    width: 600px;
     background: darkgrey;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     border: 2px solid black;
     border-radius: 6px;
 }
 
-@media screen and (max-width: 600px) {
-    .calContainer {
-        width: 100%;
-    }
-}
-
 
 @media screen and (max-width: 600px) {
-    #calc-table td tr {
+    #calc-table{
         margin: auto;
         width: 100%;
+    }
+
+    .btn{
+        margin: auto;
+        width: inherit;
+        height: inherit;
     }
 }
 
 .btn {
-    display: inline-block;
+    display: block;
     width: 110px;
     height: 50px;
     font-size: 16px;
@@ -36,7 +36,7 @@
 }
 
 tr, td {
-    padding: 2px;
+    padding: 3px;
 }
 
 #clear-entry {
@@ -45,13 +45,14 @@ tr, td {
 
 #calc-table {
     background: beige;
-    display: block;
-    justify-content: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
     border: 2px solid darkmagenta;
     border-radius: 6px;
     margin: 30px auto;
-    padding: 10px;
-    box-shadow: inset 0 0 0 11px beige;
+    padding: 20px;
+    box-shadow: inset 0 0 0 2px beige;
 }
 
 #display-field {
@@ -59,12 +60,11 @@ tr, td {
     height: 55px;
     border-radius: 4px;
     text-align: right;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     border: 2px solid salmon;
 
 }
-
 
 #prev-result {
     background: transparent;
@@ -74,4 +74,5 @@ tr, td {
     margin: auto;
     width: 100%;
     float: top;
+    border: none;
 }
