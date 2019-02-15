@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS  and JS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+<div class="container calContainer text-center">
+    <table id="calc-table">
+        <tr>
+            <td colspan="4"><input type="text" class="text-field" id="prev-result"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" class="text-field" id="display-field"></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-light ">(</button></td>
+            <td><button type="button" class="btn btn-light">)</button></td>
+            <td colspan="2"><button type="button" id="clear-entry" class="btn btn-primary">CE</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-light">7</button></td>
+            <td><button type="button" class="btn btn-light">8</button></td>
+            <td><button type="button" class="btn btn-light">9</button></td>
+            <td><button type="button" class="btn btn-primary">/</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-light">4</button></td>
+            <td><button type="button" class="btn btn-light">5</button></td>
+            <td><button type="button" class="btn btn-light">6</button></td>
+            <td><button type="button" class="btn btn-primary">X</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-light">1</button></td>
+            <td><button type="button" class="btn btn-light">2</button></td>
+            <td><button type="button" class="btn btn-light">3</button></td>
+            <td><button type="button" class="btn btn-primary">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-light">0</button></td>
+            <td><button type="button" class="btn btn-light">.</button></td>
+            <td><button type="button" class="btn btn-warning">=</button></td>
+            <td><button type="button" class="btn btn-primary">+</button></td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- my JavaScript -->
+<script src="calcOperations.js"></script>
+<!-- Popper.js, Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
