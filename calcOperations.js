@@ -90,4 +90,3 @@ function evaluate() {
         document.getElementById("prev-result").value = expression + " =ERROR";
     }
 }
-
